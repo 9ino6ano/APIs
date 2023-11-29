@@ -1,0 +1,35 @@
+1 - Install Python: https://www.python.org/
+2 - Install Flask: pip install Flask
+3 - Install Flask-PyMongo: pip install Flask-PyMongo
+4 - Install MongoDB: https://www.mongodb.com/try/download/community
+
+5 - add the code in the app.py
+
+6 - Run your MongoDB Server
+
+7 - Run your Flask Application
+
+8 - Now Your API is running locally, you can test it using Postman or curl
+8.1 - Test the User Registration endpoint
+Endpoint: POST http://localhost:5000/register
+Payload:
+{
+    "username": "user1",
+    "email": "user1@example.com",
+    "password": "password123"
+}
+8.2 - Test the song management end-points
+Endpoint: POST http://localhost:5000/songs
+Payload:
+{
+    "title": "Song Title",
+    "artist": "Artist Name",
+    "genre": "Genre"
+}
+
+8.3 - Get all songs
+Endpoint: GET http://localhost:5000/songs
+
+
+@This is a basic example, and you can expand it by adding more endpoints, error handling, authentication, and connecting to external APIs (like Spotify).
+Always handle sensitive information securely, especially in a production environment.
